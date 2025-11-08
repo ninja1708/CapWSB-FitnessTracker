@@ -1,5 +1,5 @@
 # GitHub Actions CI/CD pipeline for a Java project using Maven
-# File path should be: .github/workflows/github-ci-cd.yml
+# File path should be :.github/workflows/github-ci-cd.yml
 name: Java CI with Maven
 permissions:
   contents: read
