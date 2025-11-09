@@ -21,6 +21,12 @@ public class User {
     @Nullable
     private Long id;
 
+    @Column(name = "first_name", nullable = false)
+    private String firstName;
+
+    @Column(name = "last_name", nullable = false)
+    private String lastName;
+
     @Column(name = "birthdate", nullable = false)
     private LocalDate birthdate;
 
@@ -35,6 +41,8 @@ public class User {
 
         this.birthdate = birthdate;
         this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
 }
