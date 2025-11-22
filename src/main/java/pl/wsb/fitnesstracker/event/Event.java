@@ -10,6 +10,50 @@ import java.time.LocalDate;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 
-// TODO: Define the Event entity with appropriate fields and annotations
+
 public class Event {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Nullable
+    private Long id;
+
+    @Column(name ="name", nullable = false)
+    private String name;
+
+    @Column(name ="description", nullable = false)
+    private String description;
+
+    @Column(name ="startTime", nullable = false)
+    private LocalDate startTime;
+
+    @Column(name ="endTime", nullable = false)
+    private LocalDate endTime;
+
+    @Column(name ="country", nullable = false)
+    private String country;
+
+    @Column(name ="city", nullable = false)
+    private String city;
+
+    public Event(
+            final Long id,
+            final String name,
+            final String description,
+            final LocalDate startTime,
+            final LocalDate endTime,
+            final String country,
+            final String city) {
+        this.name = name;
+        this.description = description;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.country = country;
+        this.city = city;
+    }
+
+
+
+
+
 }
