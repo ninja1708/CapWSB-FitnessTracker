@@ -44,6 +44,4 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
 }
-
